@@ -2,116 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Instant Quote | K.I.A Home Service</title>
+  <title>Get a Free Quote | K.I.A Home Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="quote-page">
+<body>
   <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
+    <div class="header-top">
+      <div class="header-logo">
         <div class="logo-mark">KIA</div>
         <div class="logo-text">
-          <span class="logo-main">K.I.A Home Service</span>
-          <span class="logo-sub">Window washing • Pressure washing • Detailing</span>
+          <div class="logo-main">K.I.A Home Service</div>
+          <div class="logo-sub">Window Washing • Pressure Washing • Car Detailing</div>
         </div>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html#services">Services</a>
-        <a href="index.html#packages">Packages & pricing</a>
-        <a href="index.html#subscriptions">Subscriptions</a>
-        <a href="quote.html" class="nav-cta">Instant quote</a>
-      </nav>
+      </div>
+      <div class="header-contact">
+        <span>(480) 482‑9507</span>
+        <span>homeservicekia@gmail.com</span>
+        <span>Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
+      </div>
     </div>
+    <nav class="bubble-nav">
+      <a href="windows.html" class="bubble-link">Windows</a>
+      <a href="pressure-washing.html" class="bubble-link">Pressure Washing</a>
+      <a href="car-detailing.html" class="bubble-link">Car Detailing</a>
+      <a href="contact.html" class="bubble-link">Contact</a>
+      <a href="quote.html" class="bubble-link bubble-link-primary bubble-link-active">Get a Free Quote</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="quote-hero">
-      <h1>Get a fast, photo‑based quote</h1>
-      <p>
-        Tell us what you need, add photos when you’re ready, and we’ll respond with clear pricing
-        and available time windows.
+  <main class="page-main">
+    <section class="section">
+      <h1 class="page-title">Get a free quote</h1>
+      <p class="page-intro">
+        Tell us what you need and we’ll send back a clear, simple quote for your windows, concrete, or vehicle.
       </p>
-    </section>
 
-    <section class="quote-layout">
-      <article class="quote-card">
-        <form>
-          <div class="form-grid">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="First and last name" />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" type="tel" placeholder="Best number for text" />
-            </div>
-
-            <div>
-              <label for="email">Email (optional)</label>
-              <input id="email" type="email" placeholder="you@example.com" />
-            </div>
-            <div>
-              <label for="service">Service</label>
-              <select id="service">
-                <option value="">Select a service</option>
-                <option value="windows">Window washing (quote required)</option>
-                <option value="pressure">Pressure washing (quote required)</option>
-                <option value="bronze">Bronze package — Express clean</option>
-                <option value="silver">Silver package — Interior & exterior detail</option>
-                <option value="gold">Gold package — Full detail restoration</option>
-                <option value="sedan-detail">Sedan interior detail</option>
-                <option value="suv-detail">SUV / truck interior detail</option>
-                <option value="cleanview">CleanView interior reset</option>
-                <option value="upc">UPC pet & kid cleanup</option>
-                <option value="weekly-sedan">Weekly sedan interior</option>
-                <option value="weekly-suv">Weekly SUV / truck interior</option>
-                <option value="weekly-windows">Weekly window touch‑up</option>
-                <option value="quarterly-pressure">Quarterly pressure plan</option>
-                <option value="bundle">Bundle / multiple services</option>
-                <option value="other">Something else</option>
-              </select>
-            </div>
-
-            <div class="form-grid-full">
-              <label for="details">Tell us what you’re seeing</label>
-              <textarea
-                id="details"
-                placeholder="Example: 2018 SUV with kids + dog, needs interior reset. Or: 2‑car driveway + front walkway for pressure washing."></textarea>
-            </div>
-
-            <div>
-              <label for="location">City / area</label>
-              <input id="location" type="text" placeholder="Phoenix, Queen Creek, Mesa..." />
-            </div>
-            <div>
-              <label for="timing">Preferred timing</label>
-              <input id="timing" type="text" placeholder="Weekday mornings, Saturdays, ASAP..." />
-            </div>
-
-            <div class="form-grid-full">
-              <button type="submit" class="btn btn-primary btn-block">
-                Submit quote request
-              </button>
-            </div>
-          </div>
-        </form>
-      </article>
-
-      <aside class="quote-card quote-aside">
-        <h3>How quotes work</h3>
-        <p>
-          We’ll review your details, ask for photos if needed, and send back a clear price and time window.
-        </p>
-        <ul>
-          <li>Most detailing and weekly services have set pricing.</li>
-          <li>Window washing and pressure washing are quote‑based for accuracy.</li>
-          <li>You can add your own photos later to show exactly what you need.</li>
-        </ul>
-        <p style="margin-top:10px;">
-          Serving the East Valley: Phoenix, Queen Creek, Mesa, Chandler, Gilbert, Scottsdale, and Tempe.
-        </p>
-      </aside>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Quote details</h2>
+          <form>
+            <label for="q-name">Name</label>
+            <input id="q-name" type="text" placeholder="Your name" />
+            <label for="q-phone">Phone</label>
+            <input id="q-phone" type="tel" placeholder="(480) 000‑0000" />
+            <label for="q-email">Email</label>
+            <input id="q-email" type="email" placeholder="you@example.com" />
+            <label for="q-service">Service type</label>
+            <input id="q-service" type="text" placeholder="Windows, pressure washing, detailing, etc." />
+            <label for="q-notes">Notes</label>
+            <textarea id="q-notes" placeholder="Tell us about your home, driveway, or vehicle."></textarea>
+            <button type="submit" class="btn btn-primary" style="margin-top:10px;">Submit quote request</button>
+          </form>
+        </div>
+        <div class="contact-card">
+          <h2>What happens next?</h2>
+          <p>We’ll review your details, ask for photos if needed, and send back a clear quote.</p>
+          <p>For set‑price services, we’ll send you a direct Square checkout link so you can book instantly.</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -132,9 +81,11 @@
       <div class="footer-links">
         <h4>Quick links</h4>
         <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#packages">Packages & pricing</a>
-        <a href="quote.html">Instant quote</a>
+        <a href="windows.html">Windows</a>
+        <a href="pressure-washing.html">Pressure washing</a>
+        <a href="car-detailing.html">Car detailing</a>
+        <a href="quote.html">Get a free quote</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <p class="footer-copy">© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
