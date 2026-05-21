@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Car Detailing | K.I.A Home Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-logo">
+        <div class="logo-mark">KIA</div>
+        <div class="logo-text">
+          <div class="logo-main">K.I.A Home Service</div>
+          <div class="logo-sub">Window Washing • Pressure Washing • Car Detailing</div>
+        </div>
+      </div>
+      <div class="header-contact">
+        <span>(480) 482‑9507</span>
+        <span>homeservicekia@gmail.com</span>
+        <span>Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
+      </div>
+    </div>
+    <nav class="bubble-nav">
+      <a href="windows.html" class="bubble-link">Windows</a>
+      <a href="pressure-washing.html" class="bubble-link">Pressure Washing</a>
+      <a href="car-detailing.html" class="bubble-link bubble-link-active">Car Detailing</a>
+      <a href="contact.html" class="bubble-link">Contact</a>
+      <a href="quote.html" class="bubble-link bubble-link-primary">Get a Free Quote</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section">
+      <h1 class="page-title">Car detailing packages</h1>
+      <p class="page-intro">
+        These packages use <strong>set prices</strong> that match your Square checkout links.
+        Update the prices below to match your exact Square amounts.
+      </p>
+
+      <div class="price-box-grid">
+        <!-- BRONZE -->
+        <article class="price-box">
+          <h2>Bronze package — Express clean</h2>
+          <p class="price-box-note">Best for weekly or bi‑weekly maintenance.</p>
+          <p class="price-box-price">
+            <!-- REPLACE WITH YOUR REAL PRICE -->
+            Starting at: <strong>{{BRONZE_PRICE}}</strong>
+          </p>
+          <ul class="price-box-list">
+            <li>Exterior hand wash</li>
+            <li>Wheel & tire cleaning</li>
+            <li>Interior vacuum</li>
+            <li>Window wipe‑down</li>
+            <li>Dash & console cleaning</li>
+          </ul>
+          <!-- Link this to your Square checkout URL -->
+          <a href="{{BRONZE_SQUARE_LINK}}" class="btn btn-primary">Book Bronze</a>
+        </article>
+
+        <!-- SILVER -->
+        <article class="price-box price-box-popular">
+          <h2>Silver package — Interior & exterior detail</h2>
+          <p class="price-box-note">Most popular for families and daily drivers.</p>
+          <p class="price-box-price">
+            <!-- REPLACE WITH YOUR REAL PRICE -->
+            Starting at: <strong>{{SILVER_PRICE}}</strong>
+          </p>
+          <ul class="price-box-list">
+            <li>Everything in Bronze</li>
+            <li>Interior deep wipe‑down</li>
+            <li>Seat shampoo or leather conditioning</li>
+            <li>Door jamb cleaning</li>
+            <li>Spray wax protection</li>
+            <li>Tire shine finish</li>
+          </ul>
+          <a href="{{SILVER_SQUARE_LINK}}" class="btn btn-primary">Book Silver</a>
+        </article>
+
+        <!-- GOLD -->
+        <article class="price-box">
+          <h2>Gold package — Full detail restoration</h2>
+          <p class="price-box-note">Best for selling or neglected vehicles.</p>
+          <p class="price-box-price">
+            <!-- REPLACE WITH YOUR REAL PRICE -->
+            Starting at: <strong>{{GOLD_PRICE}}</strong>
+          </p>
+          <ul class="price-box-list">
+            <li>Everything in Silver</li>
+            <li>Clay bar paint treatment</li>
+            <li>Light polish enhancement</li>
+            <li>Engine bay cleaning</li>
+            <li>Carpet shampoo extraction</li>
+            <li>Interior stain removal</li>
+          </ul>
+          <a href="{{GOLD_SQUARE_LINK}}" class="btn btn-primary">Book Gold</a>
+        </article>
+      </div>
+
+      <h2 class="section-title" style="margin-top:32px;">Maintenance & specialty</h2>
+      <div class="price-box-grid">
+        <!-- WEEKLY SEDAN -->
+        <article class="price-box">
+          <h2>Weekly sedan interior</h2>
+          <p class="price-box-note">Keep your sedan clean on a weekly rhythm.</p>
+          <p class="price-box-price">
+            From <strong>{{WEEKLY_SEDAN_PRICE}}</strong> per week
+          </p>
+          <ul class="price-box-list">
+            <li>Quick vacuum</li>
+            <li>Dash & console wipe</li>
+            <li>Glass touch‑up</li>
+          </ul>
+          <a href="{{WEEKLY_SEDAN_SQUARE_LINK}}" class="btn btn-primary">Start weekly sedan plan</a>
+        </article>
+
+        <!-- WEEKLY SUV -->
+        <article class="price-box">
+          <h2>Weekly SUV / truck interior</h2>
+          <p class="price-box-note">For family and work vehicles.</p>
+          <p class="price-box-price">
+            From <strong>{{WEEKLY_SUV_PRICE}}</strong> per week
+          </p>
+          <ul class="price-box-list">
+            <li>Cargo & third row included</li>
+            <li>High‑touch areas wiped</li>
+            <li>Glass touch‑up</li>
+          </ul>
+          <a href="{{WEEKLY_SUV_SQUARE_LINK}}" class="btn btn-primary">Start weekly SUV plan</a>
+        </article>
+
+        <!-- WEEKLY WINDOWS -->
+        <article class="price-box">
+          <h2>Weekly window touch‑up</h2>
+          <p class="price-box-note">Entry and main living‑area glass only.</p>
+          <p class="price-box-price">
+            From <strong>{{WEEKLY_WINDOWS_PRICE}}</strong> per week
+          </p>
+          <ul class="price-box-list">
+            <li>Main entry glass</li>
+            <li>Sliding doors</li>
+            <li>High‑impact glass only</li>
+          </ul>
+          <a href="{{WEEKLY_WINDOWS_SQUARE_LINK}}" class="btn btn-primary">Start weekly window plan</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-mark footer-logo-mark">KIA</div>
+        <div>
+          <div class="footer-title">K.I.A Home Service</div>
+          <div class="footer-tagline">Crystal clear. Impeccably clean.</div>
+          <div class="footer-contact">
+            <span>Phone: (480) 482‑9507</span>
+            <span>Email: homeservicekia@gmail.com</span>
+            <span>Service area: Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="windows.html">Windows</a>
+        <a href="pressure-washing.html">Pressure washing</a>
+        <a href="car-detailing.html">Car detailing</a>
+        <a href="quote.html">Get a free quote</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
