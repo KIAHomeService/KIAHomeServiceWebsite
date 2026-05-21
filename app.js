@@ -49,4 +49,3 @@ chips.forEach((chip) => {
     chip.classList.add("chip-active");
   });
 });
-
