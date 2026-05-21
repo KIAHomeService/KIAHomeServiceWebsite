@@ -4,23 +4,25 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  const categoryCards = document.querySelectorAll(".service-category-card");
-  const tierPanels = document.querySelectorAll(".service-tier-grid");
+  const groups = document.querySelectorAll(".service-group");
 
-  categoryCards.forEach((card) => {
-    card.addEventListener("click", () => {
-      const category = card.getAttribute("data-category");
+  groups.forEach((group) => {
+    const header = group.querySelector(".service-group-header");
+    if (!header) return;
 
-      tierPanels.forEach((panel) => {
-        panel.classList.remove("service-tier-grid-visible");
-      });
+    header.addEventListener("click", () => {
+      const isOpen = group.classList.contains("open");
 
-      const panel = document.querySelector(
-        `.service-tier-grid[data-tier-panel="${category}"]`
-      );
-      if (panel) {
-        panel.classList.add("service-tier-grid-visible");
-        panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      // close all
+      groups.forEach((g) => g.classList.remove("open"));
+
+      // open clicked if it was closed
+      if (!isOpen) {
+        group.classList.add("open");
+        const body = group.querySelector(".service-group-body");
+        if (body) {
+          body.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
     });
   });
