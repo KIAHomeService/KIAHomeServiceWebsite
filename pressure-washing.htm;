@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pressure Washing | K.I.A Home Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-logo">
+        <div class="logo-mark">KIA</div>
+        <div class="logo-text">
+          <div class="logo-main">K.I.A Home Service</div>
+          <div class="logo-sub">Window Washing • Pressure Washing • Car Detailing</div>
+        </div>
+      </div>
+      <div class="header-contact">
+        <span>(480) 482‑9507</span>
+        <span>homeservicekia@gmail.com</span>
+        <span>Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
+      </div>
+    </div>
+    <nav class="bubble-nav">
+      <a href="windows.html" class="bubble-link">Windows</a>
+      <a href="pressure-washing.html" class="bubble-link bubble-link-active">Pressure Washing</a>
+      <a href="car-detailing.html" class="bubble-link">Car Detailing</a>
+      <a href="contact.html" class="bubble-link">Contact</a>
+      <a href="quote.html" class="bubble-link bubble-link-primary">Get a Free Quote</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section">
+      <h1 class="page-title">Pressure washing</h1>
+      <p class="page-intro">
+        Driveways, walkways, and concrete are priced by size and condition, so pressure washing is
+        always <strong>quote‑based</strong>.
+      </p>
+
+      <div class="price-box-grid">
+        <article class="price-box">
+          <h2>Driveways & concrete</h2>
+          <p class="price-box-note">Driveways, walkways, patios, and more.</p>
+          <p class="price-box-price price-box-quote">Quote required</p>
+          <ul class="price-box-list">
+            <li>Concrete only (no house siding)</li>
+            <li>Pre‑treat for heavy staining where needed</li>
+            <li>Even, consistent finish</li>
+          </ul>
+          <a href="booking-pressure.html" class="btn btn-outline">Request a pressure quote</a>
+        </article>
+
+        <article class="price-box">
+          <h2>Quarterly pressure plan</h2>
+          <p class="price-box-note">Keep your concrete bright all year.</p>
+          <p class="price-box-price price-box-quote">Quote required</p>
+          <ul class="price-box-list">
+            <li>Quarterly visits</li>
+            <li>Driveway + main walkways</li>
+            <li>Custom plan based on your layout</li>
+          </ul>
+          <a href="booking-quarterly-pressure.html" class="btn btn-outline">View plan details</a>
+        </article>
+      </div>
+
+      <p class="page-note">
+        You’ll be able to add your own photos so we can see the exact concrete areas you want cleaned.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-mark footer-logo-mark">KIA</div>
+        <div>
+          <div class="footer-title">K.I.A Home Service</div>
+          <div class="footer-tagline">Crystal clear. Impeccably clean.</div>
+          <div class="footer-contact">
+            <span>Phone: (480) 482‑9507</span>
+            <span>Email: homeservicekia@gmail.com</span>
+            <span>Service area: Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="windows.html">Windows</a>
+        <a href="pressure-washing.html">Pressure washing</a>
+        <a href="car-detailing.html">Car detailing</a>
+        <a href="quote.html">Get a free quote</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
