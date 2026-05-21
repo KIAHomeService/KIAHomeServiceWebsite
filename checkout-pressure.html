@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pressure Washing Checkout - K.I.A Home Service</title>
+    <title>Pressure Washing - K.I.A Home Service</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -25,7 +24,6 @@
         </div>
     </header>
 
-    <!-- Checkout Section -->
     <section class="checkout">
         <div class="container">
             <div class="checkout-content">
@@ -36,8 +34,8 @@
                     <div class="service-details">
                         <h3>Pricing</h3>
                         <ul>
-                            <li><strong>$0.20 per sq ft</strong></li>
-                            <li><strong>Minimum: $125</strong></li>
+                            <li>$0.20 per square foot</li>
+                            <li>Minimum: $125</li>
                         </ul>
                         <h3>Includes</h3>
                         <ul>
@@ -48,9 +46,8 @@
                         </ul>
                     </div>
 
-                    <!-- Booking Form -->
                     <form action="https://formsubmit.co/homeservicekia@gmail.com" method="POST" class="booking-form">
-                        <input type="hidden" name="_subject" value="New Booking — Pressure Washing">
+                        <input type="hidden" name="_subject" value="Pressure Washing Booking">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
 
@@ -70,65 +67,37 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="driveway-size">Approximate Driveway Size (sq ft)</label>
-                            <input type="number" id="driveway-size" name="driveway-size" placeholder="e.g., 600">
-                        </div>
-
-                        <div class="form-group">
                             <label for="preferred-date">Preferred Date *</label>
                             <input type="date" id="preferred-date" name="preferred-date" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="preferred-time">Preferred Time</label>
-                            <input type="time" id="preferred-time" name="preferred-time">
+                            <label for="notes">Driveway Size & Special Requests</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Approximate square footage?"></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label for="notes">Special Requests or Notes</label>
-                            <textarea id="notes" name="notes" rows="4" placeholder="Any concerns, obstacles, or special requests?"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large">Book Now</button>
+                        <button type="submit" class="btn btn-primary btn-large">Continue to Payment</button>
                     </form>
                 </div>
 
                 <div class="checkout-info-section">
-                    <div class="payment-methods">
-                        <h3>Payment Methods</h3>
-                        <ul>
-                            <li><strong>Venmo:</strong> @isaacanderson21</li>
-                            <li><strong>Zelle:</strong> 480-482-9507</li>
-                            <li><strong>Apple Pay:</strong> 480-482-9507</li>
-                            <li><strong>Cash:</strong> Pay at time of service</li>
-                        </ul>
+                    <div class="service-info">
+                        <h3>Next Step</h3>
+                        <p>After submitting your details, you'll be directed to pay securely with Square.</p>
                     </div>
-
-                    <div class="payment-confirmation">
-                        <h3>After Booking</h3>
-                        <p>After sending payment, text a screenshot and your name to <strong>480-482-9507</strong> to confirm your booking.</p>
-                    </div>
-
+                    <a href="https://square.link/u/njao6v4c" class="btn square-btn">Pay with Square</a>
                     <div class="service-info">
                         <h3>Service Areas</h3>
-                        <p>We serve Gilbert, Chandler, Mesa, Queen Creek, and East Valley Arizona.</p>
-                    </div>
-
-                    <div class="pricing-info">
-                        <h3>Pricing Example</h3>
-                        <p>A 600 sq ft driveway = $120 (minimum is $125, so we charge $125)</p>
-                        <p>A 1000 sq ft driveway = $200</p>
+                        <p>Gilbert, Chandler, Mesa, Queen Creek, East Valley AZ</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 K.I.A Home Service. All rights reserved.</p>
-            <p>Premium exterior services in East Valley, Arizona.</p>
         </div>
     </footer>
 </body>

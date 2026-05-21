@@ -34,191 +34,152 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with Dropdowns -->
     <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
             
-            <!-- Car Detailing -->
-            <div class="service-category">
-                <h3>Car Detailing</h3>
-                <div class="service-cards">
-                    <!-- Bronze -->
-                    <div class="card">
-                        <h4>Bronze Detail Package</h4>
-                        <p class="price">From <strong>$120</strong> (Sedan) / $140 (SUV)</p>
-                        <ul>
-                            <li>Exterior hand wash</li>
-                            <li>Wheel & tire cleaning</li>
-                            <li>Tire shine</li>
-                            <li>Interior vacuum</li>
-                            <li>Surface wipe down</li>
-                            <li>Interior windows</li>
-                            <li>Door jamb cleaning</li>
-                        </ul>
-                        <a href="checkout-bronze.html" class="btn btn-primary">Book Bronze</a>
-                    </div>
-
-                    <!-- Silver -->
-                    <div class="card">
-                        <h4>Silver Detail Package</h4>
-                        <p class="price">From <strong>$180</strong> (Sedan) / $210 (SUV)</p>
-                        <ul>
-                            <li>Everything in Bronze, plus:</li>
-                            <li>Spray wax protection</li>
-                            <li>Deep vacuum</li>
-                            <li>Carpet & seat spot shampoo</li>
-                            <li>Dash & console protectant</li>
-                            <li>Air vent cleaning</li>
-                            <li>Light pet hair removal</li>
-                            <li>Minor steam cleaning</li>
-                        </ul>
-                        <a href="checkout-silver.html" class="btn btn-primary">Book Silver</a>
-                    </div>
-
-                    <!-- Gold -->
-                    <div class="card">
-                        <h4>Gold Detail Package</h4>
-                        <p class="price">From <strong>$280</strong> (Sedan) / $320 (SUV)</p>
-                        <ul>
-                            <li>Everything in Silver, plus:</li>
-                            <li>Full carpet & seat shampoo</li>
-                            <li>Leather conditioning</li>
-                            <li>Clay bar treatment</li>
-                            <li>Full steam cleaning</li>
-                            <li>Trim restoration</li>
-                            <li>High-gloss sealant</li>
-                            <li>Engine bay wipe down</li>
-                            <li>Odor treatment</li>
-                        </ul>
-                        <a href="checkout-gold.html" class="btn btn-primary">Book Gold</a>
+            <!-- Car Detailing Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>🚗 Car Detailing</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-bronze-sedan.html" class="dropdown-item">
+                            <h4>Bronze Sedan</h4>
+                            <p>$120</p>
+                        </a>
+                        <a href="checkout-bronze-suv.html" class="dropdown-item">
+                            <h4>Bronze SUV/Truck</h4>
+                            <p>$140</p>
+                        </a>
+                        <a href="checkout-silver-sedan.html" class="dropdown-item">
+                            <h4>Silver Sedan</h4>
+                            <p>$180</p>
+                        </a>
+                        <a href="checkout-silver-suv.html" class="dropdown-item">
+                            <h4>Silver SUV/Truck</h4>
+                            <p>$210</p>
+                        </a>
+                        <a href="checkout-gold-sedan.html" class="dropdown-item">
+                            <h4>Gold Sedan</h4>
+                            <p>$280</p>
+                        </a>
+                        <a href="checkout-gold-suv.html" class="dropdown-item">
+                            <h4>Gold SUV/Truck</h4>
+                            <p>$320</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Window Washing -->
-            <div class="service-category">
-                <h3>Exterior Window Washing</h3>
-                <div class="service-cards">
-                    <div class="card">
-                        <h4>Exterior Window Cleaning</h4>
-                        <p class="description">Professional window cleaning for your home or business.</p>
-                        <ul>
-                            <li>Small windows: <strong>$5 per pane</strong></li>
-                            <li>Large windows/sliding doors: <strong>$9 per pane</strong></li>
-                            <li>Screens: +$3 each</li>
-                            <li>Hard water removal: on-site quote</li>
-                            <li>Second story: additional fee</li>
-                            <li>Typical home total: <strong>$120–$250</strong></li>
-                        </ul>
-                        <a href="checkout-windows.html" class="btn btn-primary">Book Windows</a>
+            <!-- Clean View Bundle Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>✨ Clean View Bundles</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-cleanview.html" class="dropdown-item">
+                            <h4>Clean View Bronze</h4>
+                            <p>Car Detail + Windows</p>
+                        </a>
+                        <a href="checkout-cleanview.html" class="dropdown-item">
+                            <h4>Clean View Silver</h4>
+                            <p>Car Detail + Windows</p>
+                        </a>
+                        <a href="checkout-cleanview.html" class="dropdown-item">
+                            <h4>Clean View Gold</h4>
+                            <p>Car Detail + Windows</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Pressure Washing -->
-            <div class="service-category">
-                <h3>Driveway Pressure Washing</h3>
-                <div class="service-cards">
-                    <div class="card">
-                        <h4>Driveway Pressure Washing</h4>
-                        <p class="description">Deep clean your driveway with professional pressure washing.</p>
-                        <ul>
-                            <li>Pricing: <strong>$0.20 per sq ft</strong></li>
-                            <li>Minimum: <strong>$125</strong></li>
-                            <li>Surface cleaning & dirt removal</li>
-                            <li>Edge rinsing</li>
-                            <li>Final rinse</li>
-                        </ul>
-                        <a href="checkout-pressure.html" class="btn btn-primary">Book Pressure Wash</a>
+            <!-- Ultimate Property Clean Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>🏠 Ultimate Property Clean</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-upc.html" class="dropdown-item">
+                            <h4>UPC Bronze</h4>
+                            <p>All Three Services</p>
+                        </a>
+                        <a href="checkout-upc.html" class="dropdown-item">
+                            <h4>UPC Silver</h4>
+                            <p>All Three Services</p>
+                        </a>
+                        <a href="checkout-upc.html" class="dropdown-item">
+                            <h4>UPC Gold</h4>
+                            <p>All Three Services</p>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Bundle Packages -->
-    <section class="bundles">
-        <div class="container">
-            <h2>Bundle Packages</h2>
-            <p class="section-subtitle">Save 10–15% with our bundle deals</p>
-            <div class="service-cards">
-                <div class="card">
-                    <h4>Exterior Refresh Bundle</h4>
-                    <p class="price"><strong>Save 10%</strong></p>
-                    <p>Window Washing + Pressure Washing</p>
-                    <ul>
-                        <li>Small homes: starting at <strong>$199</strong></li>
-                        <li>Medium homes: starting at <strong>$299</strong></li>
-                        <li>Large homes: custom quote</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>Clean View Bundle</h4>
-                    <p class="price"><strong>Save 10%</strong></p>
-                    <p>Car Detailing + Window Washing</p>
-                    <ul>
-                        <li>Bronze detail + windows</li>
-                        <li>Starting at <strong>$199</strong></li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>Driveway & Detail Bundle</h4>
-                    <p class="price"><strong>Save 10%</strong></p>
-                    <p>Car Detailing + Pressure Washing</p>
-                    <ul>
-                        <li>Bronze detail + driveway</li>
-                        <li>Starting at <strong>$225</strong></li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>Ultimate Property Clean</h4>
-                    <p class="price"><strong>Save 15%</strong></p>
-                    <p>All Three Services</p>
-                    <ul>
-                        <li>Bronze included: starting at <strong>$349</strong></li>
-                        <li>Silver upgrade: +$60–$80</li>
-                        <li>Gold upgrade: +$120–$160</li>
-                    </ul>
+            <!-- Window Washing Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>💧 Window Washing</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-windows.html" class="dropdown-item">
+                            <h4>One-Time Service</h4>
+                            <p>$5-$9 per pane</p>
+                        </a>
+                        <a href="checkout-weekly-windows.html" class="dropdown-item">
+                            <h4>Weekly Subscription</h4>
+                            <p>$264/month</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Discounts & Programs -->
-    <section class="discounts">
-        <div class="container">
-            <h2>Discounts & Programs</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h4>Multi-Car Discount</h4>
-                    <ul>
-                        <li>10% off second vehicle</li>
-                        <li>15% off third vehicle</li>
-                        <li>Same location, same appointment</li>
-                    </ul>
+            <!-- Pressure Washing Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>💨 Pressure Washing</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-pressure.html" class="dropdown-item">
+                            <h4>One-Time Service</h4>
+                            <p>$0.20/sq ft</p>
+                        </a>
+                        <a href="checkout-quarterly-pressure.html" class="dropdown-item">
+                            <h4>Quarterly Subscription</h4>
+                            <p>$112/quarter</p>
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="card">
-                    <h4>Recurring Service Program</h4>
-                    <p>Save 10–15% on:</p>
-                    <ul>
-                        <li>Monthly window cleaning</li>
-                        <li>Monthly detailing</li>
-                        <li>Quarterly pressure washing</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>Referral Program</h4>
-                    <p>Refer a customer and get:</p>
-                    <ul>
-                        <li>$25 off next service</li>
-                        <li>OR free service add-on upgrade</li>
-                    </ul>
+            <!-- Weekly Car Detail Subscription Dropdown -->
+            <div class="service-category-dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    <span>📅 Weekly Car Detail Subscription</span>
+                    <span class="dropdown-icon">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <a href="checkout-weekly-sedan.html" class="dropdown-item">
+                            <h4>Weekly Sedan</h4>
+                            <p>$216/month</p>
+                        </a>
+                        <a href="checkout-weekly-suv.html" class="dropdown-item">
+                            <h4>Weekly SUV/Truck</h4>
+                            <p>$256/month</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,22 +207,22 @@
             <div class="faq-items">
                 <div class="faq-item">
                     <h4>How do I book a service?</h4>
-                    <p>Click on any service above and fill out the booking form. We'll confirm your appointment and payment instructions via text.</p>
+                    <p>Click on any service above, select your options, and fill out the booking form. You'll be directed to secure payment with Square.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>What payment methods do you accept?</h4>
-                    <p>We accept Venmo, Zelle, Apple Pay, and cash. You can also text a payment screenshot to confirm your booking.</p>
+                    <p>We accept all major payment methods through Square, including credit cards, debit cards, Apple Pay, and Google Pay.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>Can I get a discount for multiple services?</h4>
-                    <p>Yes! We offer bundle packages with 10–15% savings, plus multi-car and recurring service discounts.</p>
+                    <p>Yes! Check out our Clean View Bundles and Ultimate Property Clean packages for significant savings.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>Do you offer subscriptions?</h4>
-                    <p>Yes! Check out our monthly and quarterly subscription options on the Subscriptions page.</p>
+                    <p>Yes! Check out weekly car detailing, weekly window cleaning, and quarterly pressure washing subscriptions.</p>
                 </div>
 
                 <div class="faq-item">
@@ -300,5 +261,13 @@
             <p>Premium exterior services in East Valley, Arizona.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.nextElementSibling;
+            dropdown.classList.toggle('open');
+            button.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
