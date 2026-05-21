@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Get a Quote | K.I.A Home Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quote-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/kia-logo-diamond.png" alt="K.I.A Home Service" />
+        <div class="logo-text">
+          <span class="logo-main">K.I.A Home Service</span>
+          <span class="logo-sub">On‑site auto & home care</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#subscriptions">Subscriptions</a>
+        <a href="quote.html" class="nav-cta">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="quote-hero">
+      <h1>Get a fast, photo‑based quote</h1>
+      <p>Tell us what you need, drop a few details, and we’ll text or email back with pricing and availability.</p>
+    </section>
+
+    <section class="quote-layout">
+      <article class="quote-card">
+        <form>
+          <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="First and last name" />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="Best number for text" />
+            </div>
+
+            <div>
+              <label for="email">Email (optional)</label>
+              <input id="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select id="service">
+                <option value="">Select a service</option>
+                <option value="sedan-detail">Sedan Interior Detail</option>
+                <option value="suv-detail">SUV / Truck Interior Detail</option>
+                <option value="cleanview">CleanView Interior Reset</option>
+                <option value="upc">UPC Pet & Kid Cleanup</option>
+                <option value="windows">Residential Window Cleaning</option>
+                <option value="pressure">Pressure Washing</option>
+                <option value="weekly-sedan">Weekly Sedan Plan</option>
+                <option value="weekly-suv">Weekly SUV / Truck Plan</option>
+                <option value="weekly-windows">Weekly Window Touch‑Up</option>
+                <option value="quarterly-pressure">Quarterly Pressure Plan</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-grid-full">
+              <label for="details">Tell us what you’re seeing</label>
+              <textarea id="details" placeholder="Example: 2018 SUV, kids + dog, needs interior reset and spill cleanup in second row."></textarea>
+            </div>
+
+            <div>
+              <label for="location">City / Area</label>
+              <input id="location" type="text" placeholder="Gilbert, Queen Creek, Mesa..." />
+            </div>
+            <div>
+              <label for="timing">Preferred timing</label>
+              <input id="timing" type="text" placeholder="Example: weekday mornings, Saturdays, ASAP" />
+            </div>
+
+            <div class="form-grid-full">
+              <button type="submit" class="btn btn-primary btn-block">
+                Submit quote request
+              </button>
+            </div>
+          </div>
+        </form>
+      </article>
+
+      <aside class="quote-card quote-aside">
+        <h3>How quotes work</h3>
+        <p>
+          We’ll review your details, ask for photos if needed, and send back a clear price and time window.
+        </p>
+        <ul>
+          <li>Most quotes answered same day</li>
+          <li>Photo‑based pricing for accuracy</li>
+          <li>No surprise add‑ons on site</li>
+        </ul>
+        <p style="margin-top:10px;">
+          Serving the East Valley: Gilbert, Queen Creek, Mesa, and nearby areas.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> K.I.A Home Service • East Valley, AZ</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
