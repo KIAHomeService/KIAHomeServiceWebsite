@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="header-contact">
-        <span>(480) 482‑9507</span>
+        <span>(480) 482-9507</span>
         <span>homeservicekia@gmail.com</span>
         <span>Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
       </div>
@@ -33,41 +33,35 @@
 
   <main class="page-main">
     <section class="section">
-      <h1 class="page-title">Pressure washing</h1>
+      <h1 class="section-title">Pressure Washing</h1>
       <p class="page-intro">
-        Driveways, walkways, and concrete are priced by size and condition, so pressure washing is
-        always <strong>quote‑based</strong>.
+        Driveways, walkways, patios, and concrete cleaning with quote-based plans tailored to your property.
       </p>
 
-      <div class="price-box-grid">
-        <article class="price-box">
-          <h2>Driveways & concrete</h2>
-          <p class="price-box-note">Driveways, walkways, patios, and more.</p>
-          <p class="price-box-price price-box-quote">Quote required</p>
-          <ul class="price-box-list">
-            <li>Concrete only (no house siding)</li>
-            <li>Pre‑treat for heavy staining where needed</li>
-            <li>Even, consistent finish</li>
+      <div class="service-tier-grid service-tier-grid-visible">
+        <article class="tier-card tier-card-pressure">
+          <h4>Driveways & concrete</h4>
+          <p class="tier-note">Quote-based • depends on size & condition.</p>
+          <p class="tier-price">Quote required</p>
+          <ul>
+            <li>Driveways, walkways, patios</li>
+            <li>Concrete only (no siding)</li>
+            <li>Pre-treat heavy staining</li>
           </ul>
-          <a href="booking-pressure.html" class="btn btn-outline">Request a pressure quote</a>
+          <a href="booking-pressure.html" class="tier-cta">Start pressure washing quote →</a>
         </article>
 
-        <article class="price-box">
-          <h2>Quarterly pressure plan</h2>
-          <p class="price-box-note">Keep your concrete bright all year.</p>
-          <p class="price-box-price price-box-quote">Quote required</p>
-          <ul class="price-box-list">
-            <li>Quarterly visits</li>
-            <li>Driveway + main walkways</li>
+        <article class="tier-card tier-card-pressure">
+          <h4>Quarterly pressure plan</h4>
+          <p class="tier-note">Quote-based • recurring visits.</p>
+          <p class="tier-price">Quote required</p>
+          <ul>
+            <li>Quarterly driveway & walkway cleaning</li>
             <li>Custom plan based on your layout</li>
           </ul>
-          <a href="booking-quarterly-pressure.html" class="btn btn-outline">Request quarterly quote</a>
+          <a href="booking-quarterly-pressure.html" class="tier-cta">Start quarterly plan quote →</a>
         </article>
       </div>
-
-      <p class="page-note">
-        You’ll be able to add photos of your concrete so we can see the exact areas you want cleaned.
-      </p>
     </section>
   </main>
 
@@ -78,21 +72,7 @@
         <div>
           <div class="footer-title">K.I.A Home Service</div>
           <div class="footer-tagline">Crystal clear. Impeccably clean.</div>
-          <div class="footer-contact">
-            <span>Phone: (480) 482‑9507</span>
-            <span>Email: homeservicekia@gmail.com</span>
-            <span>Service area: Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
-          </div>
         </div>
-      </div>
-      <div class="footer-links">
-        <h4>Quick links</h4>
-        <a href="index.html">Home</a>
-        <a href="windows.html">Windows</a>
-        <a href="pressure-washing.html">Pressure washing</a>
-        <a href="car-detailing.html">Car detailing</a>
-        <a href="quote.html">Get a free quote</a>
-        <a href="contact.html">Contact</a>
       </div>
     </div>
     <p class="footer-copy">© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
