@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Washing Checkout - K.I.A Home Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/kia-logo-diamond.png" alt="K.I.A Home Service Logo">
+                    <span>K.I.A Home Service</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html#services">Services</a>
+                    <a href="subscriptions.html">Subscriptions</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="index.html#faq">FAQ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-content">
+                <div class="checkout-form-section">
+                    <h1>Exterior Window Washing</h1>
+                    <p class="service-type">Professional Window Cleaning</p>
+                    
+                    <div class="service-details">
+                        <h3>Pricing</h3>
+                        <ul>
+                            <li>Small windows: <strong>$5 per pane</strong></li>
+                            <li>Large windows/sliding doors: <strong>$9 per pane</strong></li>
+                            <li>Screens: +$3 each</li>
+                            <li>Hard water removal: on-site quote</li>
+                            <li>Second story: additional fee</li>
+                            <li>Typical home total: <strong>$120–$250</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <form action="https://formsubmit.co/homeservicekia@gmail.com" method="POST" class="booking-form">
+                        <input type="hidden" name="_subject" value="New Booking — Window Washing">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date *</label>
+                            <input type="date" id="preferred-date" name="preferred-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-time">Preferred Time</label>
+                            <input type="time" id="preferred-time" name="preferred-time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="window-count">Approximate Number of Windows</label>
+                            <input type="number" id="window-count" name="window-count" placeholder="e.g., 15">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Special Requests (screens, hard water removal, second story)</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Let us know about any special requests or obstacles"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Book Now</button>
+                    </form>
+                </div>
+
+                <div class="checkout-info-section">
+                    <div class="payment-methods">
+                        <h3>Payment Methods</h3>
+                        <ul>
+                            <li><strong>Venmo:</strong> @isaacanderson21</li>
+                            <li><strong>Zelle:</strong> 480-482-9507</li>
+                            <li><strong>Apple Pay:</strong> 480-482-9507</li>
+                            <li><strong>Cash:</strong> Pay at time of service</li>
+                        </ul>
+                    </div>
+
+                    <div class="payment-confirmation">
+                        <h3>After Booking</h3>
+                        <p>After sending payment, text a screenshot and your name to <strong>480-482-9507</strong> to confirm your booking.</p>
+                    </div>
+
+                    <div class="service-info">
+                        <h3>Service Areas</h3>
+                        <p>We serve Gilbert, Chandler, Mesa, Queen Creek, and East Valley Arizona.</p>
+                    </div>
+
+                    <div class="pricing-info">
+                        <h3>Pricing Note</h3>
+                        <p>We'll provide a final quote based on the number and type of windows. Typical homes range from $120–$250.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 K.I.A Home Service. All rights reserved.</p>
+            <p>Premium exterior services in East Valley, Arizona.</p>
+        </div>
+    </footer>
+</body>
+</html>
