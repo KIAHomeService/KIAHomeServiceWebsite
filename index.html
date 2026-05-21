@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <!-- HEADER -->
   <header class="site-header">
     <div class="header-top">
       <div class="header-logo">
@@ -19,14 +16,12 @@
           <div class="logo-sub">Window Washing • Pressure Washing • Car Detailing</div>
         </div>
       </div>
-
       <div class="header-contact">
-        <span>(480) 482‑9507</span>
+        <span>(480) 482-9507</span>
         <span>homeservicekia@gmail.com</span>
         <span>Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
       </div>
     </div>
-
     <nav class="bubble-nav">
       <a href="windows.html" class="bubble-link">Windows</a>
       <a href="pressure-washing.html" class="bubble-link">Pressure Washing</a>
@@ -36,287 +31,368 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main class="home-main">
-
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
           <h1>Crystal clear. Impeccably clean.</h1>
           <p>
-            Light, bright, on‑site care for your windows, concrete, and vehicles.
+            Light, bright, on-site care for your windows, concrete, and vehicles.
             Built for busy East Valley schedules with clear, upfront pricing.
           </p>
-
           <div class="hero-actions">
             <a href="quote.html" class="btn btn-primary">Get your free quote</a>
-            <a href="#services-hub" class="btn btn-outline">Explore services</a>
+            <a href="#services" class="btn btn-outline">View services</a>
           </div>
         </div>
-
         <div class="hero-summary">
-          <h2>How our pricing works</h2>
-          <p>Most services use clear, set prices. Only a few need quotes:</p>
+          <h2>Simple, honest pricing</h2>
+          <p>Most services use clear, set prices tied directly to your Square checkout.</p>
+          <p>A few services (like window counts and large concrete areas) are quote-based so you never overpay.</p>
           <ul>
-            <li>Window washing (by window count & access)</li>
-            <li>Pressure washing driveways / concrete (by size)</li>
+            <li>Set-price detailing, bundles, and subscriptions</li>
+            <li>Quote-based windows and pressure washing when size/access varies</li>
           </ul>
-          <p>Everything else is set pricing tied to our Square checkout.</p>
         </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE SERVICES HUB -->
-    <section class="section" id="services-hub">
-      <h2 class="section-title">Services</h2>
+    <section class="section" id="services">
+      <h2 class="section-title">Services & pricing</h2>
       <p class="page-intro">
-        Tap a main service category to reveal all packages and pricing.
+        Tap a category below to expand its services. Each tier shows clear pricing and goes straight into booking and payment.
       </p>
 
-      <!-- THREE MAIN CATEGORY CARDS -->
-      <div class="service-category-grid">
-
-        <!-- WINDOWS -->
-        <div class="service-category-card" data-category="windows">
-          <div class="service-category-header">
-            <h3>Window Cleaning</h3>
-            <p>Exterior, interior, and weekly window care.</p>
+      <!-- WINDOW CLEANING -->
+      <div class="service-group" data-panel="windows">
+        <button class="service-group-header" type="button">
+          <div class="service-group-title">
+            <span class="service-group-label">Window Cleaning</span>
+            <span class="service-group-subtitle">Exterior, interior, and weekly window care.</span>
           </div>
-          <div class="service-category-tag">Tap to view window packages</div>
-        </div>
+          <span class="service-group-icon">+</span>
+        </button>
+        <div class="service-group-body">
+          <div class="tier-grid">
+            <article class="tier-card tier-windows">
+              <h3>Exterior windows</h3>
+              <p class="tier-desc">
+                Professional exterior window cleaning for a brighter, cleaner home. Ideal for regular maintenance or pre‑event refresh.
+              </p>
+              <p class="tier-meta">Quote-based • priced by window count & access.</p>
+              <p class="tier-price">Quote required</p>
+              <ul>
+                <li>Exterior glass cleaned and detailed</li>
+                <li>Frames and sills wiped</li>
+                <li>Screens removed, cleaned, and reinstalled</li>
+              </ul>
+              <a href="booking-windows.html" class="tier-link">Start exterior window quote →</a>
+            </article>
 
-        <!-- PRESSURE WASHING -->
-        <div class="service-category-card" data-category="pressure">
-          <div class="service-category-header">
-            <h3>Power Washing</h3>
-            <p>Driveways, walkways, patios, and concrete.</p>
+            <article class="tier-card tier-windows">
+              <h3>Interior windows</h3>
+              <p class="tier-desc">
+                Interior glass and tracks cleaned for a spotless, streak‑free finish throughout your home.
+              </p>
+              <p class="tier-meta">Quote-based • added during your visit or quote.</p>
+              <p class="tier-price">Quote required</p>
+              <ul>
+                <li>Interior glass cleaned and polished</li>
+                <li>Tracks and sills wiped</li>
+                <li>High‑touch areas detailed</li>
+              </ul>
+              <a href="booking-windows.html" class="tier-link">Start interior window quote →</a>
+            </article>
+
+            <article class="tier-card tier-windows">
+              <h3>Weekly window washing</h3>
+              <p class="tier-desc">
+                Keep your main entry and key glass areas consistently clean with a simple weekly visit.
+              </p>
+              <p class="tier-meta">Set price • subscription.</p>
+              <p class="tier-price">$264 / month</p>
+              <ul>
+                <li>Weekly cleaning of key exterior glass</li>
+                <li>Consistent, scheduled visits</li>
+                <li>Perfect for busy households</li>
+              </ul>
+              <a href="booking-weekly-windows.html" class="tier-link">Start weekly window plan →</a>
+            </article>
           </div>
-          <div class="service-category-tag">Tap to view power washing options</div>
         </div>
+      </div>
 
-        <!-- CAR DETAILING -->
-        <div class="service-category-card" data-category="detailing">
-          <div class="service-category-header">
-            <h3>Car Detailing</h3>
-            <p>Bronze, Silver, Gold, bundles, and subscriptions.</p>
+      <!-- POWER WASHING -->
+      <div class="service-group" data-panel="pressure">
+        <button class="service-group-header" type="button">
+          <div class="service-group-title">
+            <span class="service-group-label">Power Washing</span>
+            <span class="service-group-subtitle">Driveways, walkways, patios, and concrete.</span>
           </div>
-          <div class="service-category-tag">Tap to view detailing packages</div>
+          <span class="service-group-icon">+</span>
+        </button>
+        <div class="service-group-body">
+          <div class="tier-grid">
+            <article class="tier-card tier-pressure">
+              <h3>Driveways & concrete</h3>
+              <p class="tier-desc">
+                Deep clean your driveway and main concrete areas to remove dirt, buildup, and surface stains.
+              </p>
+              <p class="tier-meta">Quote-based • depends on size & condition.</p>
+              <p class="tier-price">Quote required</p>
+              <ul>
+                <li>Driveways, walkways, and patios</li>
+                <li>Concrete‑safe cleaning approach</li>
+                <li>Pre‑treatment for heavy staining</li>
+              </ul>
+              <a href="booking-pressure.html" class="tier-link">Start pressure washing quote →</a>
+            </article>
+
+            <article class="tier-card tier-pressure">
+              <h3>Quarterly pressure plan</h3>
+              <p class="tier-desc">
+                A recurring plan to keep your main concrete areas looking fresh all year long.
+              </p>
+              <p class="tier-meta">Quote-based • recurring visits.</p>
+              <p class="tier-price">Quote required</p>
+              <ul>
+                <li>Quarterly driveway and walkway cleaning</li>
+                <li>Custom plan based on your layout</li>
+                <li>Ideal for high‑traffic homes</li>
+              </ul>
+              <a href="booking-quarterly-pressure.html" class="tier-link">Start quarterly plan quote →</a>
+            </article>
+          </div>
         </div>
-
       </div>
 
-      <!-- WINDOWS TIERS -->
-      <div class="service-tier-grid" data-tier-panel="windows">
+      <!-- CAR DETAILING -->
+      <div class="service-group" data-panel="detailing">
+        <button class="service-group-header" type="button">
+          <div class="service-group-title">
+            <span class="service-group-label">Car Detailing</span>
+            <span class="service-group-subtitle">Bronze, Silver, and Gold packages for sedans, SUVs, and trucks.</span>
+          </div>
+          <span class="service-group-icon">+</span>
+        </button>
+        <div class="service-group-body">
+          <div class="tier-grid">
+            <article class="tier-card tier-detailing">
+              <h3>Bronze detail</h3>
+              <p class="tier-desc">
+                A focused refresh for vehicles that need a solid clean without a full deep‑dive.
+              </p>
+              <p class="tier-meta">Set price • express clean.</p>
+              <p class="tier-price">
+                Sedan: $120<br />
+                SUV / Truck: $140
+              </p>
+              <ul>
+                <li>Exterior wash and dry</li>
+                <li>Wheels and tires cleaned</li>
+                <li>Interior vacuum and basic wipe‑down</li>
+              </ul>
+              <a href="booking-detail-sedan.html" class="tier-link">Book Bronze sedan →</a>
+              <a href="booking-detail-suv.html" class="tier-link tier-link-secondary">Book Bronze SUV / truck →</a>
+            </article>
 
-        <article class="tier-card tier-card-windows">
-          <h4>Exterior windows</h4>
-          <p class="tier-note">Quote‑based • priced by window count & access.</p>
-          <p class="tier-price">Quote required</p>
-          <ul>
-            <li>Exterior glass cleaning</li>
-            <li>Frames & sills wiped</li>
-            <li>Screens removed & reinstalled</li>
-          </ul>
-          <a href="booking-windows.html" class="tier-cta">Start exterior window quote →</a>
-        </article>
+            <article class="tier-card tier-detailing">
+              <h3>Silver detail</h3>
+              <p class="tier-desc">
+                A balanced interior and exterior detail for vehicles that need more attention inside and out.
+              </p>
+              <p class="tier-meta">Set price • interior & exterior detail.</p>
+              <p class="tier-price">
+                Sedan: $180<br />
+                SUV / Truck: $210
+              </p>
+              <ul>
+                <li>Everything in Bronze</li>
+                <li>Interior deep clean and surfaces detailed</li>
+                <li>Seat shampoo or leather care</li>
+              </ul>
+              <a href="booking-detail-sedan.html" class="tier-link">Book Silver sedan →</a>
+              <a href="booking-detail-suv.html" class="tier-link tier-link-secondary">Book Silver SUV / truck →</a>
+            </article>
 
-        <article class="tier-card tier-card-windows">
-          <h4>Interior windows</h4>
-          <p class="tier-note">Quote‑based • added during your visit or quote.</p>
-          <p class="tier-price">Quote required</p>
-          <ul>
-            <li>Interior glass cleaning</li>
-            <li>Tracks & sills wiped</li>
-            <li>High‑touch areas detailed</li>
-          </ul>
-          <a href="booking-windows.html" class="tier-cta">Start interior window quote →</a>
-        </article>
-
-        <article class="tier-card tier-card-windows">
-          <h4>Weekly window washing</h4>
-          <p class="tier-note">Set price • subscription.</p>
-          <p class="tier-price">$264 / month</p>
-          <ul>
-            <li>Main entry & key glass areas</li>
-            <li>Consistent weekly visits</li>
-          </ul>
-          <a href="booking-weekly-windows.html" class="tier-cta">Start weekly window plan →</a>
-        </article>
-
+            <article class="tier-card tier-detailing">
+              <h3>Gold detail</h3>
+              <p class="tier-desc">
+                A full restoration‑style detail for vehicles that need a complete reset inside and out.
+              </p>
+              <p class="tier-meta">Set price • full restoration.</p>
+              <p class="tier-price">
+                Sedan: $280<br />
+                SUV / Truck: $320
+              </p>
+              <ul>
+                <li>Everything in Silver</li>
+                <li>Clay bar and light polish</li>
+                <li>Carpet and stain extraction</li>
+              </ul>
+              <a href="booking-detail-sedan.html" class="tier-link">Book Gold sedan →</a>
+              <a href="booking-detail-suv.html" class="tier-link tier-link-secondary">Book Gold SUV / truck →</a>
+            </article>
+          </div>
+        </div>
       </div>
 
-      <!-- PRESSURE WASHING TIERS -->
-      <div class="service-tier-grid" data-tier-panel="pressure">
+      <!-- SUBSCRIPTIONS -->
+      <div class="service-group" data-panel="subscriptions">
+        <button class="service-group-header" type="button">
+          <div class="service-group-title">
+            <span class="service-group-label">Subscriptions</span>
+            <span class="service-group-subtitle">Set‑schedule care for vehicles and windows.</span>
+          </div>
+          <span class="service-group-icon">+</span>
+        </button>
+        <div class="service-group-body">
+          <div class="tier-grid">
+            <article class="tier-card tier-subscription">
+              <h3>Weekly SUV / truck detail</h3>
+              <p class="tier-desc">
+                Keep your SUV or truck consistently clean with a weekly detail that fits busy schedules.
+              </p>
+              <p class="tier-meta">Set price • subscription.</p>
+              <p class="tier-price">$256 / week</p>
+              <ul>
+                <li>Weekly interior and exterior care</li>
+                <li>Perfect for work vehicles and family haulers</li>
+              </ul>
+              <a href="booking-weekly-suv.html" class="tier-link">Start weekly SUV / truck plan →</a>
+            </article>
 
-        <article class="tier-card tier-card-pressure">
-          <h4>Driveways & concrete</h4>
-          <p class="tier-note">Quote‑based • depends on size & condition.</p>
-          <p class="tier-price">Quote required</p>
-          <ul>
-            <li>Driveways, walkways, patios</li>
-            <li>Concrete only (no siding)</li>
-            <li>Pre‑treat heavy staining</li>
-          </ul>
-          <a href="booking-pressure.html" class="tier-cta">Start pressure washing quote →</a>
-        </article>
+            <article class="tier-card tier-subscription">
+              <h3>Monthly sedan subscription</h3>
+              <p class="tier-desc">
+                A monthly detail to keep your sedan looking sharp without having to remember to book each time.
+              </p>
+              <p class="tier-meta">Set price • subscription.</p>
+              <p class="tier-price">$216 / month</p>
+              <ul>
+                <li>Recurring interior and exterior care</li>
+                <li>Ideal for commuters and daily drivers</li>
+              </ul>
+              <a href="booking-weekly-sedan.html" class="tier-link">Start monthly sedan plan →</a>
+            </article>
 
-        <article class="tier-card tier-card-pressure">
-          <h4>Quarterly pressure plan</h4>
-          <p class="tier-note">Quote‑based • recurring visits.</p>
-          <p class="tier-price">Quote required</p>
-          <ul>
-            <li>Quarterly driveway & walkway cleaning</li>
-            <li>Custom plan based on your layout</li>
-          </ul>
-          <a href="booking-quarterly-pressure.html" class="tier-cta">Start quarterly plan quote →</a>
-        </article>
-
+            <article class="tier-card tier-subscription">
+              <h3>Weekly window washing</h3>
+              <p class="tier-desc">
+                A simple weekly window plan to keep your main glass surfaces clean and welcoming.
+              </p>
+              <p class="tier-meta">Set price • subscription.</p>
+              <p class="tier-price">$264 / month</p>
+              <ul>
+                <li>Key exterior glass cleaned weekly</li>
+                <li>Consistent curb‑appeal boost</li>
+              </ul>
+              <a href="booking-weekly-windows.html" class="tier-link">Start weekly window plan →</a>
+            </article>
+          </div>
+        </div>
       </div>
 
-      <!-- CAR DETAILING TIERS (INCLUDING BUNDLES) -->
-      <div class="service-tier-grid" data-tier-panel="detailing">
+      <!-- BUNDLES -->
+      <div class="service-group" data-panel="bundles">
+        <button class="service-group-header" type="button">
+          <div class="service-group-title">
+            <span class="service-group-label">Bundles</span>
+            <span class="service-group-subtitle">Clean View and Ultimate Property Clean packages.</span>
+          </div>
+          <span class="service-group-icon">+</span>
+        </button>
+        <div class="service-group-body">
+          <div class="tier-grid">
+            <article class="tier-card tier-bundle">
+              <h3>Clean View Bronze</h3>
+              <p class="tier-desc">
+                A smart starter bundle that pairs a Bronze detail with a focused interior refresh.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$199</p>
+              <ul>
+                <li>Bronze vehicle detail</li>
+                <li>Added interior attention</li>
+              </ul>
+              <a href="booking-cleanview.html" class="tier-link">Book Clean View Bronze →</a>
+            </article>
 
-        <!-- BRONZE -->
-        <article class="tier-card tier-card-detailing">
-          <h4>Bronze detail</h4>
-          <p class="tier-note">Set price • express clean.</p>
-          <p class="tier-price">
-            Sedan: $120<br />
-            SUV / Truck: $140
-          </p>
-          <ul>
-            <li>Exterior wash</li>
-            <li>Wheels & tires</li>
-            <li>Interior vacuum & wipe‑down</li>
-          </ul>
-          <a href="booking-detail-sedan.html" class="tier-cta">Book Bronze sedan →</a>
-          <a href="booking-detail-suv.html" class="tier-cta tier-cta-secondary">Book Bronze SUV/truck →</a>
-        </article>
+            <article class="tier-card tier-bundle">
+              <h3>Clean View Silver</h3>
+              <p class="tier-desc">
+                A balanced bundle for drivers who want a deeper clean and more interior focus.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$259</p>
+              <ul>
+                <li>Silver vehicle detail</li>
+                <li>Extra interior care and finishing</li>
+              </ul>
+              <a href="booking-cleanview.html" class="tier-link">Book Clean View Silver →</a>
+            </article>
 
-        <!-- SILVER -->
-        <article class="tier-card tier-card-detailing">
-          <h4>Silver detail</h4>
-          <p class="tier-note">Set price • interior & exterior detail.</p>
-          <p class="tier-price">
-            Sedan: $180<br />
-            SUV / Truck: $210
-          </p>
-          <ul>
-            <li>Everything in Bronze</li>
-            <li>Interior deep clean</li>
-            <li>Seat shampoo or leather care</li>
-          </ul>
-          <a href="booking-detail-sedan.html" class="tier-cta">Book Silver sedan →</a>
-          <a href="booking-detail-suv.html" class="tier-cta tier-cta-secondary">Book Silver SUV/truck →</a>
-        </article>
+            <article class="tier-card tier-bundle">
+              <h3>Clean View Gold</h3>
+              <p class="tier-desc">
+                A premium bundle that delivers a full reset for your vehicle inside and out.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$359</p>
+              <ul>
+                <li>Gold vehicle detail</li>
+                <li>Full interior and exterior refresh</li>
+              </ul>
+              <a href="booking-cleanview.html" class="tier-link">Book Clean View Gold →</a>
+            </article>
 
-        <!-- GOLD -->
-        <article class="tier-card tier-card-detailing">
-          <h4>Gold detail</h4>
-          <p class="tier-note">Set price • full restoration.</p>
-          <p class="tier-price">
-            Sedan: $280<br />
-            SUV / Truck: $320
-          </p>
-          <ul>
-            <li>Everything in Silver</li>
-            <li>Clay bar & light polish</li>
-            <li>Carpet & stain extraction</li>
-          </ul>
-          <a href="booking-detail-sedan.html" class="tier-cta">Book Gold sedan →</a>
-          <a href="booking-detail-suv.html" class="tier-cta tier-cta-secondary">Book Gold SUV/truck →</a>
-        </article>
+            <article class="tier-card tier-upc">
+              <h3>Ultimate Property Clean Bronze</h3>
+              <p class="tier-desc">
+                A starter property bundle that combines home and vehicle care in one visit.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$349</p>
+              <ul>
+                <li>Core exterior property cleaning</li>
+                <li>Vehicle detail included</li>
+              </ul>
+              <a href="booking-upc.html" class="tier-link">Book UPC Bronze →</a>
+            </article>
 
-        <!-- CLEAN VIEW BUNDLES -->
-        <article class="tier-card tier-card-bundle">
-          <h4>Clean View Bronze</h4>
-          <p class="tier-note">Set price • $199.</p>
-          <p class="tier-price">$199</p>
-          <ul>
-            <li>Bronze detail + interior refresh</li>
-          </ul>
-          <a href="booking-cleanview.html" class="tier-cta">Book Clean View Bronze →</a>
-        </article>
+            <article class="tier-card tier-upc">
+              <h3>Ultimate Property Clean Silver</h3>
+              <p class="tier-desc">
+                Expanded coverage for both your property and vehicle with more time and detail.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$409</p>
+              <ul>
+                <li>Upgraded exterior property cleaning</li>
+                <li>Enhanced vehicle detail</li>
+              </ul>
+              <a href="booking-upc.html" class="tier-link">Book UPC Silver →</a>
+            </article>
 
-        <article class="tier-card tier-card-bundle">
-          <h4>Clean View Silver</h4>
-          <p class="tier-note">Set price • $259.</p>
-          <p class="tier-price">$259</p>
-          <ul>
-            <li>Silver detail + extra interior attention</li>
-          </ul>
-          <a href="booking-cleanview.html" class="tier-cta">Book Clean View Silver →</a>
-        </article>
-
-        <article class="tier-card tier-card-bundle">
-          <h4>Clean View Gold</h4>
-          <p class="tier-note">Set price • $359.</p>
-          <p class="tier-price">$359</p>
-          <ul>
-            <li>Gold detail + full interior & exterior reset</li>
-          </ul>
-          <a href="booking-cleanview.html" class="tier-cta">Book Clean View Gold →</a>
-        </article>
-
-        <!-- UPC -->
-        <article class="tier-card tier-card-upc">
-          <h4>UPC Bronze</h4>
-          <p class="tier-note">Set price • $349.</p>
-          <p class="tier-price">$349</p>
-          <ul>
-            <li>Starter home + vehicle bundle</li>
-          </ul>
-          <a href="booking-upc.html" class="tier-cta">Book UPC Bronze →</a>
-        </article>
-
-        <article class="tier-card tier-card-upc">
-          <h4>UPC Silver</h4>
-          <p class="tier-note">Set price • $409.</p>
-          <p class="tier-price">$409</p>
-          <ul>
-            <li>Expanded home + vehicle coverage</li>
-          </ul>
-          <a href="booking-upc.html" class="tier-cta">Book UPC Silver →</a>
-        </article>
-
-        <article class="tier-card tier-card-upc">
-          <h4>UPC Gold</h4>
-          <p class="tier-note">Set price • $469.</p>
-          <p class="tier-price">$469</p>
-          <ul>
-            <li>Maximum home + vehicle refresh</li>
-          </ul>
-          <a href="booking-upc.html" class="tier-cta">Book UPC Gold →</a>
-        </article>
-
-        <!-- SUBSCRIPTIONS -->
-        <article class="tier-card tier-card-subscription">
-          <h4>Weekly SUV / truck detail</h4>
-          <p class="tier-note">Set price • $256 / week.</p>
-          <p class="tier-price">$256 / week</p>
-          <ul>
-            <li>Regular exterior & interior upkeep</li>
-          </ul>
-          <a href="booking-weekly-suv.html" class="tier-cta">Start weekly SUV/truck plan →</a>
-        </article>
-
-        <article class="tier-card tier-card-subscription">
-          <h4>Monthly sedan subscription</h4>
-          <p class="tier-note">Set price • $216 / month.</p>
-          <p class="tier-price">$216 / month</p>
-          <ul>
-            <li>Recurring sedan interior & exterior care</li>
-          </ul>
-          <a href="booking-weekly-sedan.html" class="tier-cta">Start monthly sedan plan →</a>
-        </article>
-
+            <article class="tier-card tier-upc">
+              <h3>Ultimate Property Clean Gold</h3>
+              <p class="tier-desc">
+                A top‑tier bundle for a full property and vehicle reset in a single, well‑planned visit.
+              </p>
+              <p class="tier-meta">Set price • bundle.</p>
+              <p class="tier-price">$469</p>
+              <ul>
+                <li>Maximum exterior property coverage</li>
+                <li>Premium vehicle detail</li>
+              </ul>
+              <a href="booking-upc.html" class="tier-link">Book UPC Gold →</a>
+            </article>
+          </div>
+        </div>
       </div>
-
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
@@ -325,24 +401,22 @@
           <div class="footer-title">K.I.A Home Service</div>
           <div class="footer-tagline">Crystal clear. Impeccably clean.</div>
           <div class="footer-contact">
-            <span>Phone: (480) 482‑9507</span>
+            <span>Phone: (480) 482-9507</span>
             <span>Email: homeservicekia@gmail.com</span>
             <span>Service area: Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</span>
           </div>
         </div>
       </div>
-
       <div class="footer-links">
         <h4>Quick links</h4>
         <a href="index.html">Home</a>
         <a href="windows.html">Windows</a>
-        <a href="pressure-washing.html">Pressure washing</a>
-        <a href="car-detailing.html">Car detailing</a>
-        <a href="quote.html">Get a free quote</a>
+        <a href="pressure-washing.html">Pressure Washing</a>
+        <a href="car-detailing.html">Car Detailing</a>
+        <a href="quote.html">Get a Free Quote</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
-
     <p class="footer-copy">© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
   </footer>
 
